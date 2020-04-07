@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Katzenwelt</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300&display=swap&subset=latin-ext');
+
+* , *:before, *:after {
+  box-sizing: border-box;
+}
+
+  html, body {
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+   }
+
+body {
+background-image: url("cica.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+color: white;
+font-size: 40px;
+font-family: 'Work Sans';
+display: flex;
+flex-direction: column;
+}
+
+.redline {
+border: 1px solid red;
+display: none;
+}
+.mitte {
+flex-grow: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+position: center;
+font-size: 150px;
+opacity: 0.2;
+}
+.oben{
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 36px;
+font-family: Arial, sans-serif;
+padding: 10px 20px;
+}
+
+
+
+
+video {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+min-width: 100%;
+min-height: 100%;
+z-index: -100;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+.menu {
+margin-left: 30px;
+margin-right: 30px;
+width: 200px;
+padding: 30px 30px;
+display: inline-block;
+}
+
+.menu:hover {
+  background-color: red;
+}
+
+
+
+.button {
+font-size: 16px;
+font-family: arial;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 10px 30px;
+width: 350px;
+display: inline-block;
+margin-left: 10px;
+margin-right: 30px;
+}
+.button:hover {
+background-color: red;
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<video id="cica-video" autoplay loop muted poster="cica.png" src="cica.mp4"></video>
+
+<nav class="oben">
+<a class="menu" href="https://www.fressnapf.at/c/katze/fuettern/">Lieblingsfutter</a>
+<a class="menu" href="tagesablauf.htm">Tagesablauf</a>
+<a class="menu" href="spielbedarf.jpg">Spielbedarf</a>
+</nav>
+<div class="mitte redline">Miauuuuuuuuuuuuuu!</div>
+
+<div>
+<a class="button" href="Fensterbank ist meine zweite vorname!:)">Fensterbank ist meine zweite vorname!:)</a>
+</div>
+
+<footer></footer>
+<script>
+  document.getElementById("cica-video").playbackRate = 0.5;
+</script>
+</body>
+</html>
